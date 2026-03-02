@@ -1,17 +1,47 @@
 public class OOPSBannerApp {
 
-    public static void main(String[] args) {
-
-        String[] lines = new String[7];
-        lines[0] = String.join(" ", "   ***   ", "   ***   ", "******   ", "   ***** ");
-        lines[1] = String.join(" ", " **   ** ", " **   ** ", "**    ** ", " **      ");
-        lines[2] = String.join(" ", "**     **", "**     **", "**     **", "**       ");
-        lines[3] = String.join(" ", "**     **", "**     **", "**   **  ", "  *****  "); 
-        lines[4] = String.join(" ", "**     **", "**     **", "******   ", "      ** ");
-        lines[5] = String.join(" ", " **   ** ", " **   ** ", "**       ", " **   ** ");
-        lines[6] = String.join(" ", "   ***   ", "   ***   ", "**       ", "  *****  ");
-        for(String line : lines){
+    // Static function to print a single character pattern
+    public static void printCharacter(String[] pattern) {
+        for (String line : pattern) {
             System.out.println(line);
         }
+        System.out.println(); // space between letters
+    }
+
+    // Static function to render full word
+    public static void renderWord() {
+
+        String[] O = {
+                " ***** ",
+                "*     *",
+                "*     *",
+                "*     *",
+                " ***** "
+        };
+
+        String[] P = {
+                "***** ",
+                "*    *",
+                "***** ",
+                "*     ",
+                "*     "
+        };
+
+        String[] S = {
+                " *****",
+                "*     ",
+                " *****",
+                "      *",
+                " *****"
+        };
+
+        printCharacter(O);
+        printCharacter(O);
+        printCharacter(P);
+        printCharacter(S);
+    }
+
+    public static void main(String[] args) {
+        renderWord();   // calling static function
     }
 }
