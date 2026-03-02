@@ -1,9 +1,4 @@
-/**
- * OOPS Banner App
- * UC4: Render OOPS banner using String Array and Loop
- * @author Lalit Kishore
- * @version 4.0
- */
+
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
